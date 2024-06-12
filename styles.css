@@ -1,0 +1,34 @@
+
+h1 {
+    color: #bf8971
+}
+p{
+    color: darkslategray;
+}
+.calculadora{
+    border: 10px solid #bf8971;
+    width: 200px;
+}
+.pantalla{
+    background-color: #9ba2be;
+    border: 5px solid #9ba2be;
+}
+.pantalla p{
+    color: #2e2e2e;
+}
+.teclado{
+    background-color: #605856;
+    border: 5px solid #605856;
+    display: flex;
+    display: inline-block;
+
+}
+.teclado button{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    width: 70px;
+}
+.btn1{
+    columns: 1;
+}
