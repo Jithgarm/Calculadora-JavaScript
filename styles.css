@@ -1,34 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
 
-h1 {
-    color: #bf8971
+body {
+    min-height: 100vh;
+    background-color: #000000;
+    display: grid;
+    place-items: center;
 }
-p{
-    color: darkslategray;
+
+.calculadora {
+    background-color: #BF8870;
+    padding: .5rem; /* Aumenta el padding para estirar hacia adentro */
+    margin: 1rem;  /* Aumenta el margin para estirar hacia afuera */
+    border-radius: 1rem;
+    padding-top: 2rem; /* Aumenta el padding superior para estirar hacia adentro */
+    margin-top: 2rem;  /* Aumenta el margin superior para estirar hacia afuera */
+    width: 365px; /* Fija el ancho de la calculadora */
+    max-width: 100%; /* Asegura que no se expanda más allá del contenedor */
+
 }
-.calculadora{
-    border: 10px solid #bf8971;
-    width: 200px;
+.fondocalculadora{
+    background-color: #615757;
+    color: #f0f0f0;
+    width: 350px;
+    padding: .5rem;
+    border-bottom-left-radius: 1rem;  /* Redondea la esquina inferior izquierda */
+    border-bottom-right-radius: 1rem; /* Redondea la esquina inferior derecha */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+.fondopantalla{
+    grid-column: 1/6;
+    background-color: #1E1E1E;
+    padding: 1rem;
+    border-radius: 0rem;
+    margin-bottom: 2rem;
+    width: calc(100% + 1rem); /* Asegura que ocupe todo el ancho del contenedor padre */
+    margin-left: -0.5rem; /* Ajusta el margen izquierdo para compensar el padding */
+    margin-right: -0.5rem; /* Ajusta el margen derecho para compensar el padding */
+}
+@font-face {
+    font-family: 'Digital-7';
+    src: url('fonts/digital-7.ttf') format('truetype');
 }
 .pantalla{
-    background-color: #9ba2be;
-    border: 5px solid #9ba2be;
+    grid-column: 1/6;
+    background-color: #9AA2BD;
+    color: #000000;
+    text-align: right;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Digital-7', monospace; /* Usa la fuente Digital-7 */
+    font-weight: 600;
+    overflow: hidden; /* Oculta el desbordamiento */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    max-width: 100%; /* Asegura que no se expanda más allá del contenedor */
 }
-.pantalla p{
-    color: #2e2e2e;
-}
-.teclado{
-    background-color: #605856;
-    border: 5px solid #605856;
-    display: flex;
-    display: inline-block;
 
+/* BOTONES */
+
+.fondocalculadora button {
+    background-color: #0c0c0c;
+    color: #f0f0f0;
+    border-color: #0c0b0b;
+    padding: 1.7rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    margin: .1rem;
+    cursor: pointer;
 }
-.teclado button{
-    color: white;
-    background-color: black;
-    border: 1px solid white;
-    width: 70px;
+.btnMas {
+    grid-row: span 2; /* Ocupa el espacio de dos filas */
 }
-.btn1{
-    columns: 1;
+
+.fondocalculadora .btnHMS, 
+.fondocalculadora .btnRaiz, 
+.fondocalculadora .btnPorcentaje, 
+.fondocalculadora .btnTAXmenos, 
+.fondocalculadora .btnTAXmas {
+    background-color:#D9D9D9; /* Cambia el color de fondo */
+    color: #000000; /* Cambia el color del texto */
+    height: 50%; /* Ajusta la altura al 50% */
+    margin-bottom: -.8rem; /* Reduce el espacio inferior */
+}
+.fondocalculadora .btnMC, 
+.fondocalculadora .btnMR, 
+.fondocalculadora .btnMmenos, 
+.fondocalculadora .btnMmas, 
+.fondocalculadora .btnDividido,
+.fondocalculadora .btnMasMenos,
+.fondocalculadora .btnXY,
+.fondocalculadora .btnX,
+.fondocalculadora .btnMenos {
+    background-color:#D9D9D9;
+    color: #000000;
+}
+.fondocalculadora .btnDel, 
+.fondocalculadora .btnAC{
+    background-color:#C81B1B;
+    color: #ffffff;
+}
+.fondocalculadora .btnMas{
+    background-color:#FF8744;
+    color: #ffffff;
+}
+.fondocalculadora .btnIgual{
+    background-color:#092DAF;
+    color: #ffffff;
+}
+.fondocalculadora button:hover {
+    background-color: #1E1E1E;
+    color: #ffffff;
+}
+/* Hover effect for specific buttons */
+.fondocalculadora .btnHMS:hover, 
+.fondocalculadora .btnRaiz:hover, 
+.fondocalculadora .btnPorcentaje:hover, 
+.fondocalculadora .btnTAXmenos:hover, 
+.fondocalculadora .btnTAXmas:hover {
+    background-color:#eeecec;
+    color: #000000;
+}
+.fondocalculadora .btnMC:hover, 
+.fondocalculadora .btnMR:hover, 
+.fondocalculadora .btnMmenos:hover, 
+.fondocalculadora .btnMmas:hover, 
+.fondocalculadora .btnDividido:hover,
+.fondocalculadora .btnMasMenos:hover,
+.fondocalculadora .btnXY:hover,
+.fondocalculadora .btnX:hover,
+.fondocalculadora .btnMenos:hover {
+    background-color: #eeecec;
+    color: #000000;
+}
+.fondocalculadora .btnDel:hover, 
+.fondocalculadora .btnAC:hover{
+    background-color:#eb2b2b;
+    color: #ffffff;
+}
+.fondocalculadora .btnMas:hover{
+    background-color:#fd9862;
+    color: #ffffff;
+}
+.fondocalculadora .btnIgual:hover{
+    background-color:#1942d3; 
+    color: #ffffff;
 }

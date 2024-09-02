@@ -7,32 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Primera Calculadora (solo el html)</h1>
-    <br>
-    <div>
-        <p>Este proyecto es realizar una calculadora básica, con esta veremos HTML, CS y JS.</p>
-        <p>El estado actual del esqueleto en HTML</p>
+    <div class="calculadora">
+        <div id="fondopantalla" class="fondopantalla">
+            <div id="pantalla" class="pantalla">0</div>
+        </div>
+        <div id="fondocalculadora" class="fondocalculadora">
+            <button id="btn" class="btnHMS">H/M/S</button>
+            <button id="btn" class="btnRaiz">√</button>
+            <button id="btn" class="btnPorcentaje">%</button>
+            <button id="btn" class="btnTAXmenos">TAX-</button>
+            <button id="btn" class="btnTAXmas">TAX+</button>
+            <button id="btn" class="btnMC">MC</button>
+            <button id="btn" class="btnMR">MR</button>
+            <button id="btn" class="btnMmenos">M-</button>
+            <button id="btn" class="btnMmas">M+</button>
+            <button id="btn" class="btnDividido">÷</button>
+            <button id="btn" class="btnMasMenos">+/-</button>   
+            <button id="btn">7</button>
+            <button id="btn">8</button>
+            <button id="btn">9</button>
+            <button id="btn" class="btnX">x</button>
+            <button id="btn" class="btnXY">x<sup>Y</sup></button>
+            <button id="btn">4</button>
+            <button id="btn">5</button>
+            <button id="btn">6</button>
+            <button id="btn" class="btnMenos">-</button>
+            <button id="btn" class="btnDel">←</button>
+            <button id="btn">1</button>
+            <button id="btn">2</button>
+            <button id="btn">3</button>
+            <button id="btn" class="btnMas">+</button>
+            <button id="btn" class="btnAC">AC</button>
+            <button id="btn">0</button>
+            <button id="btn">.</button>
+            <button id="btn" class="btnIgual">=</button>
+        </div>        
     </div>
-    <section id="calculadora" class="calculadora">
-        <div id="pantalla" class="pantalla">
-            <p>Esta es la pantalla</p>
-        </div>
-        <div id="teclado" class="teclado">
-            
-        <button id="btn1">1</button>
-        <button id="btn2">2</button>
-        <button id="btn3">3</button>
-        <button id="btn4">4</button>
-        <button id="btn5">5</button>
-        <button id="btn6">6</button>
-        <button id="btn7">7</button>
-        <button id="btn8">8</button>
-        <button id="btn9">9</button>
-        <button id="btn0">0</button>
-            
-        </div>
-        <!--este es un comentario-->
-        <div id="instrucciones" class="instrucciones"></div>
-    </section>
+    <script src="index.js"></script>
 </body>
 </html>
