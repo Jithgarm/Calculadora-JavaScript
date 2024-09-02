@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     operador = '/';
                 } else if (valor === '+/-') {
                     pantalla.textContent = String(-parseFloat(pantalla.textContent));
-                } else if (valor === 'xY') {
+                } else if (valor === 'eˣ') {
                     memoria = pantalla.textContent;
                     operador = '**';
                     pantalla.textContent += '^';
