@@ -52,12 +52,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     pantalla.textContent = Number.isInteger(resultado) ? resultado.toString() : resultado.toFixed(2); // Ejemplo: aumenta un 10%
                 } else if (valor === 'MC') {
                     memoriaValor = 0;
+                    pantalla.textContent = '0';
                 } else if (valor === 'MR') {
-                    pantalla.textContent = memoriaValor;
+                    pantalla.textContent = memoriaValor.toString();
                 } else if (valor === 'M-') {
                     memoriaValor -= parseFloat(pantalla.textContent);
+                    pantalla.textContent = '0';
                 } else if (valor === 'M+') {
                     memoriaValor += parseFloat(pantalla.textContent);
+                    pantalla.textContent = '0';
                 } else if (valor === 'x') {
                     if (operador) {
                         pantalla.textContent = pantalla.textContent.slice(0, -1) + 'x';
