@@ -2,7 +2,7 @@
 
 # Calculadora JavaScript
 
-proyectoInicialScreenShot.png
+![](https://github.com/Jithgarm/proyectoInicial/blob/main/proyectoInicialScreenShot.png)
 
 Esta es una calculadora simple implementada en JavaScript. A continuación se describen las funciones y características de cada botón de la calculadora.
 
