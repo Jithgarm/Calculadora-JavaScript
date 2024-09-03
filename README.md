@@ -1,10 +1,8 @@
-# proyectoInicial
-
 # Calculadora JavaScript
 
 ![](https://github.com/Jithgarm/proyectoInicial/blob/main/proyectoInicialScreenShot.png)
 
-Esta es una calculadora simple implementada en JavaScript. A continuación se describen las funciones y características de cada botón de la calculadora.
+Esta es una calculadora simple hecha con HTML y CSS, con funcionalidades implementadas en JavaScript. A continuación se describen las funciones y características de cada botón de la calculadora.
 
 ## Funciones de los Botones
 
